@@ -65,13 +65,7 @@ html {
 
 }
 
-.rex4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    text-align: start;
-    margin-bottom: 100px;
-}
+
 .rex5{
     display: grid;
     grid-template-columns: 1fr;
@@ -105,346 +99,163 @@ html {
     gap: 12px;
 }
 
-.dex2 {
-    gap: 12px;
-    margin-top: 0;
-    position: relative;
-    z-index: 2;
-
+.rex4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  text-align: start;
+  margin-bottom: 100px;
+  justify-items: center;
+}
+.rex4 > div:empty {
+  display: none !important;
 }
 
-/* .dex2:hover p{
-    color: white !important;
-} */
-
-.pic1 {
-    
-    position: relative;
-    left: 105%;
-    bottom: 0px;
-    transform: translateX(50px);
-    transform: translateY(300px);
-    z-index: 1;
-
+/* ===== Card Base ===== */
+.cool1, .cool2, .cool3, .cool4, .cool5, .cool6 {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  border-radius: 20px;
+  padding: 50px 30px 80px;
+  cursor: pointer;
+  height: 450px;
+  width: 500px;
 }
 
-.pic2 {
-    margin-bottom: 0%;
-    position: relative;
-    left: 105%;
-    bottom: 0px;
-    transform: translateX(50px);
-    transform: translateY(300px);
-    z-index: 1;
+.cool1:hover, .cool2:hover, .cool3:hover, .cool4:hover, .cool5:hover, .cool6:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.12);
+  color: white;
 }
 
-.cool1 {
-    background-color: white;
-    position: absolute;
-    overflow: hidden;
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out
-}
-
-.cool1:hover {
-    background-color: blue;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    
-}
-.cool1-content-wrapper{
-    flex-grow: 3;
-}
-
-
-.cool1>h1 {
-    color: blue;
-}
-
-.cool1:hover h1 {
-    color: white;
-}
-
-.cool1:hover .dex2 p {
-    color: white !important;
-}
-
-.cool1:hover .dex2 svg path {
-    stroke: white;
-}
-
-.cool1:hover .pic1 {
-    animation: pic-mover 1.2s forwards;
-}
-
-@keyframes pic-mover {
-    0% {
-        transform:  translateY(100%);
-        opacity: 0;
-    }
-
-    /* 50% {
-        transform: translateX(-100%) translateY(0px);
-    }
-
-    75% {
-        transform: translateX(-100%) translateY(0px);
-    } */
-
-    100% {
-        transform:  translateY(0);
-        opacity: 1;
-    }
-}
-
-
-.cool2:hover .pic2 {
-    animation: pic-mover 1.2s forwards;
-}
-
-@keyframes pic-mover {
-    0% {
-        transform: translateX(0%) translateY(300px);
-    }
-
-    50% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-
-    75% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-
-    100% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-}
-.cool3:hover .pic2 {
-    animation: pic-mover 1.2s forwards ;
-}
-
-@keyframes pic-mover {
-    0% {
-        transform: translateX(0%) translateY(300px);
-    }
-
-    50% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-
-    75% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-
-    100% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-}
-.cool4:hover .pic2 {
-    animation: pic-mover 1.2s forwards;
-}
-
-@keyframes pic-mover {
-    0% {
-        transform: translateX(0%) translateY(300px);
-    }
-
-    50% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-
-    75% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-
-    100% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-}
-.cool5:hover .pic2 {
-    animation: pic-mover 1.2s forwards;
-}
-
-@keyframes pic-mover {
-    0% {
-        transform: translateX(0%) translateY(300px);
-    }
-
-    50% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-
-    75% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-
-    100% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-}
-.cool6:hover .pic2 {
-    animation: pic-mover 1.2s forwards;
-}
-
-@keyframes pic-mover {
-    0% {
-        transform: translateX(0%) translateY(300px);
-    }
-
-    50% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-
-    75% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-
-    100% {
-        transform: translateX(-100%) translateY(-10px);
-    }
-}
-
-
-
-.cool2 {
-    background-color: white;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out
-}
-
-.cool2:hover {
-    background-color: #3296ff;
-    color: white;
-}
-
-.cool2>h1 {
-    color: #3296ff
-}
-
-.cool2:hover h1 {
-    color: white;
-}
-
-.cool2:hover .dex2 p {
-    color: white !important;
-}
-
-.cool2:hover .dex2 svg path {
-    stroke: white;
-}
-
-.cool3 {
-    background-color: white;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out
-}
-
-.cool3:hover {
-    background-color: #069b40;
-    color: white;
-}
-
-.cool3>h1 {
-    color: #069b40;
-}
-
-.cool3:hover h1 {
-    color: white;
-}
-
-.cool3:hover .dex2 p {
-    color: white !important;
-}
-
-.cool3:hover .dex2 svg path {
-    stroke: white;
-}
-
-.cool4 {
-    background-color: white;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out
-}
-
-.cool4:hover {
-    background-color: #e5288e;
-    color: white;
-}
-
-.cool4>h1 {
-    color: #e5288e
-}
-
-.cool4:hover h1 {
-    color: white;
-}
-
-.cool4:hover .dex2 p {
-    color: white !important;
-}
-
-.cool4:hover .dex2 svg path {
-    stroke: white;
-}
-
-.cool5 {
-    background-color: white;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out
-}
-
-.cool5:hover {
-    background-color: #0c1825;
-    color: white;
-}
-
-.cool5>h1 {
-    color: #0c1825
-}
-
-.cool5:hover h1 {
-    color: white;
-}
-
-.cool5:hover .dex2 p {
-    color: white !important;
-}
-
-.cool5:hover .dex2 svg path {
-    stroke: white;
-}
-
-.cool6 {
-    background-color: white;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out
-}
-
-.cool6:hover {
-    background-color: #ff783c;
-    color: white;
-}
-
-.cool6>h1 {
-    color: #ff783c
-}
-
+/* ===== Text and Icon ===== */
+.cool1:hover h1,
+.cool2:hover h1,
+.cool3:hover h1,
+.cool4:hover h1,
+.cool5:hover h1,
 .cool6:hover h1 {
-    color: white;
+  color: white;
 }
 
+.cool1:hover .dex2 p,
+.cool2:hover .dex2 p,
+.cool3:hover .dex2 p,
+.cool4:hover .dex2 p,
+.cool5:hover .dex2 p,
 .cool6:hover .dex2 p {
-    color: white !important;
+  color: white !important;
 }
 
+.cool1:hover .dex2 svg path,
+.cool2:hover .dex2 svg path,
+.cool3:hover .dex2 svg path,
+.cool4:hover .dex2 svg path,
+.cool5:hover .dex2 svg path,
 .cool6:hover .dex2 svg path {
-    stroke: white;
+  stroke: white;
 }
+
+/* ===== Arrow & Label Positioning ===== */
+.dex2 { 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 35px;
+  left: 40px;
+  z-index: 3;
+}
+
+/* ===== Phone Image Animation ===== */
+/* ===== Phone Image Animation (keyframes version) ===== */
+.pic1, .pic2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom right;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* On hover, trigger animation */
+/* ===== Phone Image Animation (keyframes version) ===== */
+.pic1, .pic2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom right;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* On hover, trigger animation */
+/* ===== Phone Image Animation (keyframes version) ===== */
+.pic1, .pic2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom right;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* On hover, trigger animation */
+/* ===== Phone Image Animation (keyframes version) ===== */
+.pic1, .pic2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom right;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* On hover, trigger animation */
+.cool1:hover .pic1,
+.cool2:hover .pic2,
+.cool3:hover .pic2,
+.cool4:hover .pic2,
+.cool5:hover .pic2,
+.cool6:hover .pic2 {
+  animation: phoneSlideIn 1s cubic-bezier(0.25, 1, 0.3, 1) forwards;
+}
+
+/* ===== Keyframes ===== */
+@keyframes phoneSlideIn {
+  0% {
+    transform: translate(150px, 150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+
+
+
+/* ===== Individual Color Themes ===== */
+.cool1 h1 { color: #0066ff; }
+.cool1:hover { background-color: #0066ff; }
+
+.cool2 h1 { color: #3296ff; }
+.cool2:hover { background-color: #3296ff; }
+
+.cool3 h1 { color: #069b40; }
+.cool3:hover { background-color: #069b40; }
+
+.cool4 h1 { color: #e5288e; }
+.cool4:hover { background-color: #e5288e; }
+
+.cool5 h1 { color: #0c1825; }
+.cool5:hover { background-color: #0c1825; }
+
+.cool6 h1 { color: #ff783c; }
+.cool6:hover { background-color: #ff783c; }
 .cool7{
      background-color: #7913e5;
     position: relative;
@@ -607,3 +418,13 @@ html {
     top: 80px;
     left: 340px;
 }
+.bttn1, .bttn2 {
+  transform: translateY(0);
+  transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.bttn1:hover, .bttn2:hover {
+  transform: translateY(-4px) !important;
+}
+
+
