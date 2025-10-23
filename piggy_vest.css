@@ -26,11 +26,11 @@ html {
 @media (max-width: 2560px) {
   .cool7 {
     height: 500px;
-    width: 1147px;
+    width: 700px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   .btn1 {
     display: flex;
@@ -50,6 +50,10 @@ html {
   .rex5 {
     display: none;
   }
+  .text1{
+    align-items: center;
+  }
+ 
 
 }
 
@@ -89,6 +93,9 @@ html {
     margin-top: 42px;
     text-align: center;
   }
+  .text1 {
+    align-items: center;
+   }
 }
 
 @media (max-width: 375px) {
@@ -102,6 +109,9 @@ html {
     justify-content: center;
     align-items: center;
   }
+   .text1 {
+    align-items: center;
+   }
 
 
 }
